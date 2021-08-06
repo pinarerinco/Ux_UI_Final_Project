@@ -1,7 +1,11 @@
 .wrapper {
     display: flex;
-    width: 100%;
+    min-width: 375px;
+    max-width: 375px;
+    max-height: 812px;
+    min-height: 812px;
     align-items: stretch;
+    border: 1px dotted red;
 }
 
 .wrapper {
@@ -21,19 +25,11 @@
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 70px;
+    max-width: 70px;
     min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-    }
-    #sidebar.active {
-        margin-left: 0;
-    }
-}
 
 
 body {
@@ -123,5 +119,13 @@ ul ul a {
 .menu li:hover:before{
     bottom: -10px;
   background: radial-gradient(circle at bottom left, #588B8B 10px, white 11px);
+
+}
+
+/********* ACCORDION **********/
+
+#accordion {
+    display: flex;
+    align-items: center;
 
 }
