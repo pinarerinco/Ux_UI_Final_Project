@@ -4,14 +4,39 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
-<title>Page Title</title>
+<link href="jquery.datetimepicker.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 </head>
     <body>
 
         <div class="wrapper">
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Symptoms
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+
+                  <div class="accordion">
+                      <div>
+                          
+                      </div>
+                  </div>
+                
+
+                </div>
+              </div>
+
+              <div class="container mt-5 mb-5" style="width: 400px">
+                    <h3>Date Picker</h3>
+                    <input type="text" id="picker" class="form-control">
+              </div>
 
 
-            <!-- Sidebar -->
+            <!-- Sidebar
             <nav id="sidebar">
                 <div class="sidebar-header">
                     <h3>Moody</h3>
@@ -36,7 +61,17 @@
                         <a href="#">Contact</a>
                     </li>
                 </ul>
-            </nav>
+            </nav> 
+        -->
+
+        <div>
+            <img class=moodysun src="images/moodysun.png">
+        </div>
+
+        <div class="content">
+            <p><span style="font-weight:bold">Phase:</span> Follicular</p>
+
+        </div>
 
 
        <!--------------- ACCORDION ------------->
@@ -127,16 +162,16 @@
 
                   
                   
-                
 
-            <div class="accordion">
-                <div>
-                    <input type="radio" name="example_accordion" id="section1" class="accordion__input">
-                    <label for="section1" class="accordion__label">something</label>
-                </div>
+
+
+             <!--- navbar-->
+             <div class="navbar">
+                <a class="active" href="#home"><i class="fas fa-home"></i></i></a>
+                <a href="#news"><i class="far fa-edit"></i></a>
+                <a href="#contact"><i class="far fa-calendar"></i></a>
+                <a href="#about"><i class="fas fa-cog"></i></a>
             </div>
-             
-        
 
 
 
@@ -158,6 +193,16 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
           integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
           crossorigin="anonymous"></script>
+          <script> src="jquery.datetimepicker.full.min.js"</script>
+
+          <script>
+              $('#picker').datetimepicker({
+                  timepicker: false,
+                  datepicker: true,
+                  format: 'Y-m-d',
+                  value: '2019-9-1'
+              })
+          </script>
     </body>
 
 </html>
