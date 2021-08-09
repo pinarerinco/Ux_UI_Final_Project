@@ -1,40 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <style>
+        .container {
+            background-image: url("images/wavyvector.png");
+            background-repeat:no-repeat;
+            background-size: 100%;
+            
+        }
+    </style>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    
+
 </head>
     <body>
 
         <div class="wrapper">
-            <div class="card">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Symptoms
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            
 
-                  <div class="accordion">
-                      <div>
-                          
-                      </div>
-                  </div>
-                
-
-                </div>
+              <div class="container">
+                <table class="calendar" style="width:80%">
+                    <tr>
+                      <th>M</th>
+                      <th>T</th> 
+                      <th>W</th>
+                      <th>T</th>
+                      <th>F</th>
+                      <th>S</th>
+                      <th>S</th>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>2</td>
+                      <td>3</td>
+                      <td>4</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>7</td>
+                    </tr>
+                  </table>
               </div>
-
-              <div class="container mt-5 mb-5" style="width: 400px">
-                    <h3>Date Picker</h3>
-                    <input type="text" id="picker" class="form-control">
-              </div>
+        
 
 
             <!-- Sidebar
@@ -78,18 +91,7 @@
        <!--------------- ACCORDION ------------->
 
             <div class="accordion" id="accordionExample">
-                <div class="card">
-                  <div class="card-header" id="headingOne">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        Flow
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                    
-                  </div>
-                </div>
+        
 
 
                 <div class="card">
@@ -196,7 +198,15 @@
           crossorigin="anonymous"></script>
           <script> src="jquery.datetimepicker.full.min.js"</script>
 
-    
+          <link rel="stylesheet" type="text/css" media="all" href="daterangepicker.css" />
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+
+      <script type="text/javascript" src="daterangepicker.js"></script>
+
+        
     </body>
 
 </html>

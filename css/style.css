@@ -176,3 +176,22 @@ ul ul a {
       max-width: 200px;
       min-width: 200px;
   }
+
+
+  /******* CALENDAR ******/
+
+  .container {
+    max-width: 375px;
+    min-width: 375px;
+    min-height: 220px;
+  }
+
+  .calendar {
+      justify-content: center;
+      
+  }
+
+  .calendar th {
+      align-items: center;
+  }
+
