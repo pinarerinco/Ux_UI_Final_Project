@@ -136,6 +136,16 @@ ul ul a {
     margin-top: 50px;
 }
 
+input {
+    float: right;
+    margin-right: 15%;
+    
+}
+
+label {
+  margin-left: 15%;
+}
+
 /******** BOTTOM NAV **********/
 
 .navbar {
@@ -184,14 +194,24 @@ ul ul a {
     max-width: 375px;
     min-width: 375px;
     min-height: 220px;
+    display: flex;
+    
   }
 
-  .calendar {
-      justify-content: center;
-      
+
+  table, th, td {
+    max-height: 100px;
+    min-height: 50px;
+    min-width: 40px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    margin-top: auto;
+    padding-top: 10px;
+    color: #699797;
+    font-weight: lighter;
   }
 
-  .calendar th {
-      align-items: center;
-  }
+
 
