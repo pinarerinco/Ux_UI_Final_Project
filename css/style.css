@@ -31,8 +31,9 @@
 
 body {
     font-family: avenir;
-    background: #fafafa;
+    background: #FFFDF9;
     min-height: 100vh;
+
 }
 
 p {
@@ -133,18 +134,82 @@ ul ul a {
 /********* ACCORDION **********/
 
 .accordion {
-    margin-top: 50px;
+    margin-top: 20px;
+    border-radius: 20px;
+    flex-direction: column;
 }
 
 input {
     float: right;
     margin-right: 15%;
-    
 }
 
 label {
   margin-left: 15%;
 }
+
+.card {
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    color: white;
+    border-radius: 20px;
+    
+}
+
+.test {
+    border-radius: 20px;
+    border: 1px dotted red;
+    background-color: #A2C4C3;
+    min-height: 50px;
+    max-height: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+test input {
+    flex-direction: column;
+}
+
+#headingTwo {
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#headingThree {
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#headingFour {
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#headingFive {
+    border-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-header {
+    border: none;
+    background-color: #588B8B;
+    min-height: 50px;
+    max-height: 50px;
+
+}
+
+.card-header h2 {
+    color: white;
+    text-decoration: none;
+}
+
+.card button {
+    color: white;
+}
+
+
+
 
 /******** BOTTOM NAV **********/
 
