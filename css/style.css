@@ -2,7 +2,6 @@
     display: flex;
     min-width: 375px;
     max-width: 375px;
-    max-height: 812px;
     min-height: 812px;
     align-items: center;
     border: 1px dotted red;
@@ -141,54 +140,51 @@ ul ul a {
 
 input {
     float: right;
-    margin-right: 15%;
+    margin-right: 10%;
+    margin-top: 18px;
 }
 
 label {
   margin-left: 15%;
+  margin-top: 13px;
 }
 
 .card {
     margin-right: 10%;
     margin-left: 10%;
     margin-bottom: 20px;
-    color: white;
-    border-radius: 20px;
+    color: #FFFDF9;
+    border-radius: 15px;
+    border: none;
+    min-width: 300px;
     
 }
 
 .test {
-    border-radius: 20px;
-    border: 1px dotted red;
+    border-radius: 15px;
     background-color: #A2C4C3;
     min-height: 50px;
     max-height: 50px;
-    display: flex;
-    flex-direction: column;
-}
-
-test input {
-    flex-direction: column;
 }
 
 #headingTwo {
-    border-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #headingThree {
-    border-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #headingFour {
-    border-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #headingFive {
-    border-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .card-header {
