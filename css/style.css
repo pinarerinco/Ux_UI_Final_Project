@@ -204,8 +204,42 @@ label {
     color: white;
 }
 
+input[type="checkbox"] {
+    display: none;
+}
 
+label {
+    position: relative;
+}
 
+label::before {
+    content: "";
+    background: url("../images/checked.png");
+    background-position: center;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-left: 212px;
+    margin-top: 2px;
+
+    transform: scale(0) rotateZ(180deg);
+    transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+
+input[type="checkbox"]:checked + label::before {
+    transform: scale(1) rotateZ(0deg);
+}
+
+label::after {
+    content: "";
+    background: url("../images/checked.png");
+    min-width: 100px;
+    max-width: 200px;
+    min-height: 100px;
+
+    position: absolute;
+}
 
 /******** BOTTOM NAV **********/
 
@@ -246,6 +280,7 @@ label {
       align-items: center;
       max-width: 200px;
       min-width: 200px;
+      background-repeat: no-repeat;
   }
 
 
