@@ -231,15 +231,20 @@ input[type="checkbox"]:checked + label::before {
     transform: scale(1) rotateZ(0deg);
 }
 
-label::after {
-    content: "";
-    background: url("../images/checked.png");
-    min-width: 100px;
-    max-width: 200px;
-    min-height: 100px;
-
+.test2 {
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     position: absolute;
+    margin-left: 257px;
+    margin-top: 15px;
 }
+
+.btn:hover {
+    color: #fff !important;
+    text-decoration: none;
+    }
 
 /******** BOTTOM NAV **********/
 
